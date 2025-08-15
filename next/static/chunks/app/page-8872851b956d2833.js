@@ -140,26 +140,43 @@
                     type: 3,
                     gameType: { name: "game mới" },
                     href: "https://nghichthiencaimenh.com/"
+                },
+                {
+                    id: 3,
+                    name: "Đế Vương Đại Lục",
+                    logoImage: "./images/dvdl/dvdl-logo.jpg",
+                    type: 3,
+                    gameType: { name: "sắp ra mắt" },
+                    href: "#"
                 }
             ];
 
             const dataNews = [{
                     id: 1,
-                    title: "Linh Tiêu Giới - Khai mở server lúc 13h thứ 3, thứ 6 hàng tuần",
+                    title: "Linh Tiêu Giới - Khai mở server lúc 13h thứ 3 & 6 hàng tuần",
                     image: "./images/ltg/ltg-banner.jpg",
                     tag: [
                         { id: "tag1", name: "Cập nhật" },
                     ],
-                    href: "https://linhgioi4d.com/"
+                    href: "https://linhgioi4d.com"
                 },
                 {
                     id: 2,
-                    title: "Thần Ma Giáng Thế - Khai mở server lúc 13h thứ 4, thứ 7 hàng tuần",
+                    title: "Thần Ma Giáng Thế - Khai mở server lúc 13h thứ 4 & 7 hàng tuần",
                     image: "./images/tmgt/tmgt-banner.png",
                     tag: [
                         { id: "tag2", name: "Cập nhật" }
                     ],
-                    href: "https://nghichthiencaimenh.com/"
+                    href: "https://nghichthiencaimenh.com"
+                },
+                {
+                    id: 3,
+                    title: "Đế Vương Đại Lục - Sắp ra mắt",
+                    image: "./images/dvdl/dvdl-banner.jpg",
+                    tag: [
+                        { id: "tag3", name: "Sắp ra mắt" }
+                    ],
+                    href: "#"
                 }
             ];
 
