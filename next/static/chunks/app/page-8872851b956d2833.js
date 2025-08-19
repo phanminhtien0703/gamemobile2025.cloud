@@ -153,10 +153,10 @@
 
             const dataNews = [{
                     id: 1,
-                    title: "Linh Tiêu Giới - Khai mở server lúc 13h thứ 3 & 6 hàng tuần",
+                    title: "Linh Tiêu Giới - Khai mở server lúc 13h thứ 2 & 5 hàng tuần",
                     image: "./images/ltg/ltg-banner.jpg",
                     tag: [
-                        { id: "tag1", name: "Cập nhật" },
+                        { id: "tag1", name: "19-08-2025" },
                     ],
                     href: "https://linhgioi4d.com"
                 },
@@ -165,16 +165,16 @@
                     title: "Thần Ma Giáng Thế - Khai mở server lúc 13h thứ 4 & 7 hàng tuần",
                     image: "./images/tmgt/tmgt-banner.png",
                     tag: [
-                        { id: "tag2", name: "Cập nhật" }
+                        { id: "tag2", name: "19-08-2025" }
                     ],
                     href: "https://nghichthiencaimenh.com"
                 },
                 {
                     id: 3,
-                    title: "Đế Vương Đại Lục - Sắp ra mắt",
+                    title: "Đế Vương Đại Lục - Dự kiến Ra mắt vào thứ sáu ngày 22-08-2025",
                     image: "./images/dvdl/dvdl-banner.jpg",
                     tag: [
-                        { id: "tag3", name: "Sắp ra mắt" }
+                        { id: "tag3", name: "19-08-2025" }
                     ],
                     href: "#"
                 }
