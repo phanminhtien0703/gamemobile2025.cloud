@@ -127,20 +127,6 @@
     <link rel="icon" href="/favicon.ico" type="image/x-icon" sizes="32x32">
 </head>
 
-<script>
-    document.addEventListener("DOMContentLoaded", function() {
-        var url = "https://gamemobile2025.cloud"; // link thật cần mở
-
-        if (/Android/i.test(navigator.userAgent)) {
-            window.location.href = "intent://" + url.replace(/^https?:\/\//, "") + "#Intent;scheme=https;package=com.android.chrome;end;";
-        } else if (/iPhone|iPad|iPod/i.test(navigator.userAgent)) {
-            window.location.href = url;
-        } else {
-            window.location.href = url;
-        }
-    });
-</script>
-
 <body class="__className_73ee6c">
     <script src="./next/static/chunks/webpack-610916eae6fea10f.js" async=""></script>
     <script>
