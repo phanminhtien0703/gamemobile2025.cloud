@@ -1,5 +1,4 @@
 @import"https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap";
-
 :root {
     --main: rgba(0, 101, 255, 1);
     --color1: #e13f45;
@@ -42,7 +41,7 @@ a {
 body {
     font-family: Manrope, sans-serif;
     font-size: 14px;
-    background: url(/images/pattern-bg.jpg) fixed top;
+    background: url(/images/pattern-bg.png) fixed top;
     background-size: cover;
     color: var(--color2)
 }
@@ -250,7 +249,6 @@ h6 {
     display: block;
 }
 
-
 .wrapper-slider .item-banner img {
     aspect-ratio: 16/9
 }
@@ -276,7 +274,6 @@ h6 {
 }
 
 @media(max-width: 540px) {
-
     .list-product .swiper-slide,
     .list-product .swiper-slide:nth-child(2n),
     .list-product .swiper-slide:nth-child(3n) {
@@ -285,7 +282,6 @@ h6 {
 }
 
 @media(min-width: 541px)and (max-width:768px) {
-
     .list-product .swiper-slide,
     .list-product .swiper-slide:nth-child(2n),
     .list-product .swiper-slide:nth-child(3n) {
@@ -940,7 +936,6 @@ h6 {
     0% {
         left: -280px
     }
-
     to {
         left: 0
     }
@@ -950,7 +945,6 @@ h6 {
     0% {
         left: 0
     }
-
     to {
         left: -280px
     }
@@ -1181,7 +1175,6 @@ h6 {
         height: 24px;
         font-size: 10px
     }
-
     .lastest-news-page button img {
         width: 12px;
         height: 12px
@@ -3824,7 +3817,6 @@ footer .mainfooter p {
     .maincontent .tab-content .accordion-collapse ul.btn-list {
         grid-template-columns: repeat(2, 1fr)
     }
-
     .sktintuc .tab-content .itemgames .item-img {
         width: 100%;
         height: 180px
@@ -3835,64 +3827,50 @@ footer .mainfooter p {
     .baodanhhangngay .progressbar li {
         font-size: 12px
     }
-
     .sidebottom ul li a {
         flex-direction: column;
         font-size: 12px
     }
-
     .sidebottom ul li a i {
         margin-right: 0 !important;
         margin-bottom: 5px
     }
-
     .user-content .user-money .ixu {
         padding-left: 5px
     }
-
     .user-content .user-money .ixu img {
         margin-right: 5px
     }
-
     .chucnang ul.chucnang-list div {
         margin-bottom: 15px;
         font-size: 13px
     }
-
     .chucnang ul.chucnang-list div a img {
         width: 50%
     }
-
     .chucnang ul.chucnang-list {
         grid-template-columns: repeat(3, 1fr)
     }
-
     .userinfogame .container {
         align-items: flex-start;
         flex-direction: column
     }
-
     .userinfogame .container .infogame {
         margin-bottom: calc(var(--spacing)/3)
     }
-
     .usertoken {
         flex-direction: column
     }
-
     .usertoken .userinfotoken {
         margin-bottom: 1rem
     }
-
     .maincontent .nav-out {
         flex-direction: column;
         align-items: inherit
     }
-
     .maincontent .nav-out .nav {
         margin-bottom: .5rem
     }
-
     .maincontent .tab-content .itemgames {
         flex-direction: column
     }
@@ -4129,7 +4107,6 @@ footer .mainfooter p {
         margin-bottom: 0;
         margin-top: 0 !important
     }
-
     .vplay-wrap .footer .bg-footer .mainfooter .logo-footer img.vplay {
         margin-bottom: 0;
         margin-left: 0 !important;
@@ -5268,7 +5245,6 @@ h4.title {
     0% {
         bottom: -30px
     }
-
     to {
         bottom: 0
     }
@@ -5278,7 +5254,6 @@ h4.title {
     0% {
         bottom: 0
     }
-
     to {
         bottom: -30px
     }
@@ -5352,7 +5327,6 @@ h4.title {
     0% {
         bottom: -517px
     }
-
     to {
         bottom: 0
     }
@@ -5362,7 +5336,6 @@ h4.title {
     0% {
         bottom: 0
     }
-
     to {
         bottom: -517px
     }
@@ -5484,7 +5457,6 @@ h4.title {
     0% {
         bottom: -529px
     }
-
     to {
         bottom: 0
     }
@@ -5494,7 +5466,6 @@ h4.title {
     0% {
         bottom: 0
     }
-
     to {
         bottom: -529px
     }
@@ -6164,7 +6135,6 @@ h4.title {
         height: 36px;
         width: auto
     }
-
     .home_menu .item span {
         font-size: 16px;
         line-height: 22px
@@ -6178,13 +6148,11 @@ h4.title {
         line-height: 27px;
         padding-top: 0
     }
-
     .home_menu .item svg {
         margin-right: 5px;
         height: 36px;
         width: auto
     }
-
     .home_menu .item span {
         font-size: 20px;
         line-height: 27px
@@ -6248,7 +6216,6 @@ h4.title {
     .product_list .item {
         width: 25%
     }
-
     .product_list .item .img {
         border-radius: 33px
     }
@@ -6423,12 +6390,10 @@ h4.title {
 }
 
 @keyframes pulse {
-
     0%,
     to {
         transform: scale(1)
     }
-
     50% {
         transform: scale(1.1)
     }
