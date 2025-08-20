@@ -421,4 +421,25 @@
     </div>
 </body>
 
+<script>
+    document.addEventListener("DOMContentLoaded", function() {
+        document.querySelectorAll("a[href^='http']").forEach(function(link) {
+            link.addEventListener("click", function(e) {
+                var url = link.getAttribute("href");
+                if (/Android/i.test(navigator.userAgent)) {
+                    // Android -> buộc mở bằng Chrome
+                    window.location.href = "intent://" + url.replace(/^https?:\/\//, "") + "#Intent;scheme=https;package=com.android.chrome;end;";
+                } else if (/iPhone|iPad|iPod/i.test(navigator.userAgent)) {
+                    // iOS -> mở Safari
+                    window.open(url, "_system");
+                } else {
+                    // Máy khác mở bình thường
+                    window.open(url, "_blank");
+                }
+                e.preventDefault();
+            });
+        });
+    });
+</script>
+
 </html>
