@@ -171,10 +171,10 @@
                 },
                 {
                     id: 3,
-                    title: "Đế Vương Đại Lục - Dự kiến Ra mắt vào thứ sáu ngày 22-08-2025",
+                    title: "Đế Vương Đại Lục - Dự kiến Ra mắt vào Thứ ba ngày 26-08-2025",
                     image: "./images/dvdl/dvdl-banner.jpg",
                     tag: [
-                        { id: "tag3", name: "19-08-2025" }
+                        { id: "tag3", name: "22-08-2025" }
                     ],
                     href: "#"
                 }
