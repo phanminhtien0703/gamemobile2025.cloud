@@ -42,7 +42,8 @@
             const data = {
                 data: [
                     { image: '/images/tmgt/tmgt-banner.png', link: 'https://nghichthiencaimenh.com/' },
-                    { image: './images/ltg/ltg-banner.jpg', link: 'https://linhgioi4d.com/' }
+                    { image: './images/ltg/ltg-banner.jpg', link: 'https://linhgioi4d.com/' },
+                    { image: './images/dvdl/dvdl-banner.jpg', link: 'http://www.poopogame.com/url/gjQ9nA6v' }
                 ],
                 note: false // Hoặc true nếu muốn style khác cho pagination
             };
@@ -147,7 +148,7 @@
                     logoImage: "./images/dvdl/dvdl-logo.jpg",
                     type: 3,
                     gameType: { name: "sắp ra mắt" },
-                    href: "#"
+                    href: "http://www.poopogame.com/url/gjQ9nA6v"
                 }
             ];
 
@@ -176,7 +177,7 @@
                     tag: [
                         { id: "tag3", name: "22-08-2025" }
                     ],
-                    href: "#"
+                    href: "http://www.poopogame.com/url/gjQ9nA6v"
                 }
             ];
 
