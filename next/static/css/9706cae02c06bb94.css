@@ -1,4 +1,5 @@
 @import"https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap";
+
 :root {
     --main: rgba(0, 101, 255, 1);
     --color1: #e13f45;
@@ -41,7 +42,6 @@ a {
 body {
     font-family: Manrope, sans-serif;
     font-size: 14px;
-    background: url(https://gamemobilestudio.cloud/images/pattern-bg.png) fixed top;
     background-size: cover;
     color: var(--color2)
 }
@@ -219,34 +219,10 @@ h6 {
     animation: activePagination .3s linear forwards
 }
 
-.wrapper-slider {
-    margin: 0 auto;
-}
-
-@media (min-width: 768px) {
-    .wrapper-slider {
-        width: 768px !important;
-    }
-}
-
-@media (max-width: 767.98px) {
-    .wrapper-slider {
-        width: 400px !important;
-    }
-}
-
 .wrapper-slider .item-banner {
-    display: block;
-    width: 100%;
+    max-height: 300px;
     height: 300px;
-    overflow: hidden;
-}
-
-.wrapper-slider .item-banner img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    display: block;
+    display: block
 }
 
 .wrapper-slider .item-banner img {
@@ -273,7 +249,8 @@ h6 {
     width: 20% !important
 }
 
-@media(max-width: 540px) {
+@media(max-width:540px) {
+
     .list-product .swiper-slide,
     .list-product .swiper-slide:nth-child(2n),
     .list-product .swiper-slide:nth-child(3n) {
@@ -281,7 +258,8 @@ h6 {
     }
 }
 
-@media(min-width: 541px)and (max-width:768px) {
+@media(min-width:541px)and (max-width:768px) {
+
     .list-product .swiper-slide,
     .list-product .swiper-slide:nth-child(2n),
     .list-product .swiper-slide:nth-child(3n) {
@@ -333,18 +311,6 @@ h6 {
 .list-product-info .swiper-slide:nth-child(2n),
 .list-product-info .swiper-slide:nth-child(3n) {
     width: 68% !important
-}
-
-.list-product-info .swiper-slide {
-    width: 68%!important
-}
-
-.list-product-info .swiper-slide img {
-    width: 100%
-}
-
-.list-product-info .swiper-slide:nth-child(2n),.list-product-info .swiper-slide:nth-child(3n) {
-    width: 68%!important
 }
 
 .item-product-info {
@@ -559,13 +525,13 @@ h6 {
     display: flex
 }
 
-@media(min-width: 541px)and (max-width:768px) {
+@media(min-width:541px)and (max-width:768px) {
     .card-news {
         border-radius: 8px !important
     }
 }
 
-@media(max-width: 540px) {
+@media(max-width:540px) {
     .card-news {
         border-radius: 8px 8px !important
     }
@@ -728,7 +694,7 @@ h6 {
     height: 36px
 }
 
-@media(max-width: 540px) {
+@media(max-width:540px) {
     .mainheader .right-header .search-btn {
         margin-right: 10px
     }
@@ -757,7 +723,7 @@ h6 {
     max-width: 68px
 }
 
-@media(min-width: 500px) {
+@media(min-width:500px) {
     .mainheader .right-header .right-login .topinfo .u_info {
         max-width: 150px
     }
@@ -948,6 +914,7 @@ h6 {
     0% {
         left: -280px
     }
+
     to {
         left: 0
     }
@@ -957,6 +924,7 @@ h6 {
     0% {
         left: 0
     }
+
     to {
         left: -280px
     }
@@ -1061,7 +1029,7 @@ h6 {
     height: 181px
 }
 
-@media(max-width: 540px) {
+@media(max-width:540px) {
     .popup-hotline {
         max-width: 375.15px;
         height: 150px
@@ -1083,7 +1051,7 @@ h6 {
     right: 0
 }
 
-@media(max-width: 540px) {
+@media(max-width:540px) {
     .popup-hotline .close-popup {
         right: -5%
     }
@@ -1181,12 +1149,13 @@ h6 {
     display: block
 }
 
-@media(max-width: 767px) {
+@media(max-width:767px) {
     .lastest-news-page button {
         width: 24px;
         height: 24px;
         font-size: 10px
     }
+
     .lastest-news-page button img {
         width: 12px;
         height: 12px
@@ -1218,13 +1187,13 @@ h6 {
     padding: 0 12px
 }
 
-@media(max-width: 540px) {
+@media(max-width:540px) {
     .app_popup-video .modal-dialog .modal-content {
         height: 370px
     }
 }
 
-@media(min-width: 541px)and (max-width:768px) {
+@media(min-width:541px)and (max-width:768px) {
     .app_popup-video .modal-dialog .modal-content {
         height: 440px
     }
@@ -1245,14 +1214,14 @@ h6 {
     opacity: .9
 }
 
-@media(max-width: 540px) {
+@media(max-width:540px) {
     .app_popup-video .modal-dialog .modal-content .modal-header .close img {
         width: 43px;
         height: 42px
     }
 }
 
-@media(min-width: 541px)and (max-width:768px) {
+@media(min-width:541px)and (max-width:768px) {
     .app_popup-video .modal-dialog .modal-content .modal-header .close img {
         width: 43px;
         height: 42px
@@ -1381,7 +1350,7 @@ h6 {
     gap: 24px
 }
 
-@media(max-width: 540px) {
+@media(max-width:540px) {
     .wrapper-game {
         justify-content: space-between
     }
@@ -1391,13 +1360,13 @@ h6 {
     width: calc((100% - 72px)/4)
 }
 
-@media(min-width: 541px)and (max-width:768px) {
+@media(min-width:541px)and (max-width:768px) {
     .wrapper-game>div {
         width: calc((100% - 48px)/3)
     }
 }
 
-@media(max-width: 540px) {
+@media(max-width:540px) {
     .wrapper-game>div {
         width: calc((100% - 24px)/2)
     }
@@ -1437,7 +1406,7 @@ h6 {
     min-width: 200px
 }
 
-@media(min-width: 541px)and (max-width:768px) {
+@media(min-width:541px)and (max-width:768px) {
     .wrapper-detail-game .wrapper-btn a {
         width: auto;
         height: auto;
@@ -1445,7 +1414,7 @@ h6 {
     }
 }
 
-@media(max-width: 540px) {
+@media(max-width:540px) {
     .wrapper-detail-game .wrapper-btn a {
         width: auto;
         min-width: 80px;
@@ -3750,7 +3719,7 @@ p a img {
     background: radial-gradient(37.09% 78.81% at 50% 50.85%, rgba(0, 101, 255, .9) 0, rgba(0, 61, 153, 0) 100%)
 }
 
-@media(max-width: 576px) {
+@media(max-width:576px) {
     .sidebottom ul li a.active {
         background: radial-gradient(49.41% 49.15% at 50% 50.85%, rgba(0, 101, 255, .9) 0, rgba(0, 61, 153, 0) 100%)
     }
@@ -3761,7 +3730,7 @@ p a img {
     height: 20px
 }
 
-@media(max-width: 576px) {
+@media(max-width:576px) {
     .sidebottom ul li a span {
         font-size: 13px;
         text-wrap: nowrap
@@ -3819,70 +3788,85 @@ footer .mainfooter p {
     filter: brightness(110%)
 }
 
-@media(max-width: 768px) {
+@media(max-width:768px) {
     .content {
         border: 0
     }
 }
 
-@media(max-width: 540px) {
+@media(max-width:540px) {
     .maincontent .tab-content .accordion-collapse ul.btn-list {
         grid-template-columns: repeat(2, 1fr)
     }
+
     .sktintuc .tab-content .itemgames .item-img {
         width: 100%;
         height: 180px
     }
 }
 
-@media(max-width: 414px) {
+@media(max-width:414px) {
     .baodanhhangngay .progressbar li {
         font-size: 12px
     }
+
     .sidebottom ul li a {
         flex-direction: column;
         font-size: 12px
     }
+
     .sidebottom ul li a i {
         margin-right: 0 !important;
         margin-bottom: 5px
     }
+
     .user-content .user-money .ixu {
         padding-left: 5px
     }
+
     .user-content .user-money .ixu img {
         margin-right: 5px
     }
+
     .chucnang ul.chucnang-list div {
         margin-bottom: 15px;
         font-size: 13px
     }
+
     .chucnang ul.chucnang-list div a img {
         width: 50%
     }
+
     .chucnang ul.chucnang-list {
         grid-template-columns: repeat(3, 1fr)
     }
+
     .userinfogame .container {
         align-items: flex-start;
         flex-direction: column
     }
+
     .userinfogame .container .infogame {
         margin-bottom: calc(var(--spacing)/3)
     }
+
     .usertoken {
         flex-direction: column
     }
+
     .usertoken .userinfotoken {
         margin-bottom: 1rem
     }
+
     .maincontent .nav-out {
         flex-direction: column;
         align-items: inherit
     }
+
     .maincontent .nav-out .nav {
         margin-bottom: .5rem
     }
+
     .maincontent .tab-content .itemgames {
         flex-direction: column
     }
@@ -3996,7 +3980,7 @@ footer .mainfooter p {
     border-bottom: 1px solid #e5e5e5
 }
 
-@media(min-width: 768px) {
+@media(min-width:768px) {
     .vplay-wrap .canhbao {
         padding: 1.5rem
     }
@@ -4088,7 +4072,7 @@ footer .mainfooter p {
     justify-content: center
 }
 
-@media(min-width: 768px) {
+@media(min-width:768px) {
     .vplay-wrap .footer .bg-footer .mainfooter {
         padding-left: 20px;
         padding-right: 20px;
@@ -4096,7 +4080,7 @@ footer .mainfooter p {
     }
 }
 
-@media(min-width: 576px) {
+@media(min-width:576px) {
     .vplay-wrap .footer .bg-footer .mainfooter .logo-footer {
         display: flex
     }
@@ -4107,18 +4091,19 @@ footer .mainfooter p {
     margin-bottom: 0
 }
 
-@media(min-width: 768px) {
+@media(min-width:768px) {
     .vplay-wrap .footer .bg-footer .mainfooter .logo-footer img.onlive {
         margin-bottom: 0;
         margin-top: 0 !important
     }
 }
 
-@media(min-width: 576px) {
+@media(min-width:576px) {
     .vplay-wrap .footer .bg-footer .mainfooter .logo-footer img.onlive {
         margin-bottom: 0;
         margin-top: 0 !important
     }
+
     .vplay-wrap .footer .bg-footer .mainfooter .logo-footer img.vplay {
         margin-bottom: 0;
         margin-left: 0 !important;
@@ -4149,13 +4134,15 @@ footer .mainfooter p {
     margin-bottom: 0;
     padding-left: 0;
     list-style: none;
-    text-align: center
+    text-align: center;
+    max-width: 500px
 }
 
 .vplay-wrap .footer .bg-footer .mainfooter .detail .listCertify li {
     font-size: 12px;
     line-height: 14.4px;
-    letter-spacing: -.02em
+    letter-spacing: -.02em;
+    margin-bottom: 5px
 }
 
 .vplay-wrap .footer ul {
@@ -4426,7 +4413,7 @@ span.view_password {
     border-radius: 5px
 }
 
-@media(min-width: 768px) {
+@media(min-width:768px) {
     .game_list .game_category .swiper-slide {
         width: 20%
     }
@@ -4448,7 +4435,7 @@ span.view_password {
     width: 35%
 }
 
-@media(min-width: 768px) {
+@media(min-width:768px) {
     .game_list .game_category .swiper-slide:nth-child(2n) {
         width: 20%
     }
@@ -4570,7 +4557,7 @@ span.view_password {
     font-size: .7rem
 }
 
-@media(min-width: 768px) {
+@media(min-width:768px) {
     .topup_payment .method_promo .promo_info {
         font-size: 1rem
     }
@@ -4634,7 +4621,7 @@ span.view_password {
     overflow-y: auto
 }
 
-@media(min-width: 768px) {
+@media(min-width:768px) {
     .app_popup .modal-body {
         max-height: -moz-fit-content;
         max-height: fit-content
@@ -4771,7 +4758,7 @@ span.view_password {
     max-width: 100%
 }
 
-@media(min-width: 768px) {
+@media(min-width:768px) {
     .topup_bankpay .bank_info_right {
         width: 60%
     }
@@ -4879,7 +4866,7 @@ span.view_password {
     font-size: .8rem
 }
 
-@media(min-width: 768px) {
+@media(min-width:768px) {
     .topup_bankpay .bank_content {
         font-size: 1rem
     }
@@ -4984,7 +4971,7 @@ span.tick {
     font-weight: 700
 }
 
-@media(min-width: 768px) {
+@media(min-width:768px) {
     .sms_action .sms_content {
         font-size: 1rem
     }
@@ -5241,7 +5228,7 @@ h4.title {
     padding: 12px
 }
 
-@media(max-width: 570px) {
+@media(max-width:570px) {
     .selected-giftcode .item-giftcode .infor-giftcode {
         padding: 0 12px !important
     }
@@ -5257,6 +5244,7 @@ h4.title {
     0% {
         bottom: -30px
     }
+
     to {
         bottom: 0
     }
@@ -5266,6 +5254,7 @@ h4.title {
     0% {
         bottom: 0
     }
+
     to {
         bottom: -30px
     }
@@ -5339,6 +5328,7 @@ h4.title {
     0% {
         bottom: -517px
     }
+
     to {
         bottom: 0
     }
@@ -5348,6 +5338,7 @@ h4.title {
     0% {
         bottom: 0
     }
+
     to {
         bottom: -517px
     }
@@ -5469,6 +5460,7 @@ h4.title {
     0% {
         bottom: -529px
     }
+
     to {
         bottom: 0
     }
@@ -5478,6 +5470,7 @@ h4.title {
     0% {
         bottom: 0
     }
+
     to {
         bottom: -529px
     }
@@ -5922,13 +5915,13 @@ h4.title {
     margin-top: 40px
 }
 
-@media(max-width: 540px) {
+@media(max-width:540px) {
     .history-giftcode .container .content .result-search .text-center.scroll {
         overflow-x: scroll
     }
 }
 
-@media(min-width: 541px)and (max-width:768px) {
+@media(min-width:541px)and (max-width:768px) {
     .history-giftcode .container .content .result-search .text-center.scroll {
         overflow-x: scroll
     }
@@ -6042,7 +6035,7 @@ h4.title {
     background-color: #3a3a3b !important
 }
 
-@media(min-width: 769px) {
+@media(min-width:769px) {
     .history-giftcode .react-datepicker .react-datepicker__day {
         margin: 8px 10px !important
     }
@@ -6076,7 +6069,7 @@ h4.title {
     width: 100%
 }
 
-@media(min-width: 769px) {
+@media(min-width:769px) {
     .history-giftcode .react-datepicker__day-name {
         margin: 0 10px 8px !important
     }
@@ -6141,30 +6134,33 @@ h4.title {
     line-height: 16 px
 }
 
-@media(min-width: 500px) {
+@media(min-width:500px) {
     .home_menu .item svg {
         margin-right: 5px;
         height: 36px;
         width: auto
     }
+
     .home_menu .item span {
         font-size: 16px;
         line-height: 22px
     }
 }
 
-@media(min-width: 700px) {
+@media(min-width:700px) {
     .home_menu .item {
         display: flex;
         font-size: 20px;
         line-height: 27px;
         padding-top: 0
     }
+
     .home_menu .item svg {
         margin-right: 5px;
         height: 36px;
         width: auto
     }
+
     .home_menu .item span {
         font-size: 20px;
         line-height: 27px
@@ -6224,16 +6220,17 @@ h4.title {
     text-transform: uppercase
 }
 
-@media(min-width: 500px) {
+@media(min-width:500px) {
     .product_list .item {
         width: 25%
     }
+
     .product_list .item .img {
         border-radius: 33px
     }
 }
 
-@media(min-width: 700px) {
+@media(min-width:700px) {
     .product_list .item {
         width: 20%
     }
@@ -6315,7 +6312,7 @@ h4.title {
     overflow: hidden
 }
 
-@media(min-width: 500px) {
+@media(min-width:500px) {
     .giftcode_list .item .img {
         border-radius: 30px
     }
@@ -6373,7 +6370,7 @@ h4.title {
     animation: pulse 1s ease-in-out infinite
 }
 
-@media(min-width: 0px)and (max-width:375px) {
+@media(min-width:0px)and (max-width:375px) {
     .lucky_whell_btn {
         bottom: 80px;
         right: 1px;
@@ -6381,7 +6378,7 @@ h4.title {
     }
 }
 
-@media(min-width: 376px)and (max-width:541px) {
+@media(min-width:376px)and (max-width:541px) {
     .lucky_whell_btn {
         bottom: 80px;
         right: 1px;
@@ -6389,7 +6386,7 @@ h4.title {
     }
 }
 
-@media(min-width: 541px)and (max-width:769px) {
+@media(min-width:541px)and (max-width:769px) {
     .lucky_whell_btn {
         bottom: 80px;
         right: 1px;
@@ -6402,10 +6399,12 @@ h4.title {
 }
 
 @keyframes pulse {
+
     0%,
     to {
         transform: scale(1)
     }
+
     50% {
         transform: scale(1.1)
     }
@@ -6549,14 +6548,14 @@ h4.title {
     z-index: 10
 }
 
-@media(max-width: 540px) {
+@media(max-width:540px) {
     .postion-right {
         right: -80px;
         bottom: -30px
     }
 }
 
-@media(min-width: 541px)and (max-width:768px) {
+@media(min-width:541px)and (max-width:768px) {
     .postion-right {
         right: -80px;
         bottom: -30px
@@ -6568,13 +6567,13 @@ h4.title {
     scale: 1
 }
 
-@media(max-width: 540px) {
+@media(max-width:540px) {
     .postion-right img {
         scale: .41
     }
 }
 
-@media(min-width: 541px)and (max-width:768px) {
+@media(min-width:541px)and (max-width:768px) {
     .postion-right img {
         scale: .41
     }

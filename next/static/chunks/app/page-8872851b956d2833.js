@@ -1,3 +1,4 @@
+
 (self.webpackChunk_N_E = self.webpackChunk_N_E || []).push([
     [974], {
         18945: (e, s, a) => {
@@ -88,7 +89,7 @@
 
                             })
                     })
-            }
+            };
         },
         47925: (e, s, a) => {
             "use strict";
@@ -215,6 +216,21 @@
                     text: "Nhận code game Ethereal Slayer",
                 }
 
+            ];
+
+            const dataWelfare = [
+                {
+                    id: 1,
+                    title: "Hỗ trợ nạp x4",
+                    image: "./images/welfare/ho-tro-nap-x4.png",
+                    href: "https://www.facebook.com/share/p/16XdXvQTcm/"
+                },
+                {
+                    id: 2,
+                    title: "Người cũ quay về",
+                    image: "./images/welfare/nguoi-cu-quay-ve.png",
+                    href: "https://www.facebook.com/share/p/18Cjx6PyqD/"
+                }
             ];
 
             const dataNews = [{
@@ -427,6 +443,49 @@
                                                                                     })]
                                                                 })]
                                                 }),
+                                            (0, i.jsxs)("div", {
+                                                className: "welfare",
+                                                children: [
+                                                    (0, i.jsxs)("div", {
+                                                        className: "d-flex justify-content-between align-items-center mb-3 text-white",
+                                                        children: [
+                                                            (0, i.jsx)("h3", {
+                                                                className: "text-title",
+                                                                children: "KHUYẾN MÃI"
+                                                            })
+                                                        ]
+                                                    }),
+                                                    (0, i.jsx)("div", {
+                                                        className: "list-product-info",
+                                                        children: (0, i.jsx)(c.RC, { // RC = Swiper
+                                                            spaceBetween: 24,
+                                                            slidesPerView: "auto",
+                                                            freeMode: !0,
+                                                            keyboard: !0,
+                                                            noSwiping: !0,
+                                                            children: dataWelfare.map((e) =>
+                                                                (0, i.jsx)(c.qr, { // qr = SwiperSlide
+                                                                    children: (0, i.jsx)("a", {
+                                                                        className: "promo_item",
+                                                                        href: e.href,
+                                                                        target: "_blank",
+                                                                        children: (0, i.jsx)("img", {
+                                                                            src: e.image,
+                                                                            alt: e.title,
+                                                                            style: {
+                                                                                width: "505px",
+                                                                                height: "266px",
+                                                                                objectFit: "cover",
+                                                                                borderRadius: "8px"
+                                                                            }
+                                                                        })
+                                                                    })
+                                                                }, e.id)
+                                                            )
+                                                        })
+                                                    })
+                                                ]
+                                            }),
 
                                             (0, i.jsxs)("div", {
                                                 className: "giftcode_list",
@@ -439,22 +498,6 @@
                                                                 className: "text-title",
                                                                 children: "GIFTCODE"
                                                             }),
-                                                            // (0, i.jsxs)("a", {
-                                                            //     className: "d-flex align-items-center gap-2",
-                                                            //     href: "https://giftcode.onlive.vn",
-                                                            //     style: { color: "#6C727F" },
-                                                            //     children: [
-                                                            //         (0, i.jsx)("span", {
-                                                            //             className: "text-navigate",
-                                                            //             style: { cursor: "pointer" },
-                                                            //             children: "Xem tất cả"
-                                                            //         }),
-                                                            //         (0, i.jsx)("img", {
-                                                            //             alt: "",
-                                                            //             src: "/icons/arrow.svg"
-                                                            //         })
-                                                            //     ]
-                                                            // })
                                                         ]
                                                     }),
 
