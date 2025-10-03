@@ -166,6 +166,14 @@
                 type: 3,
                 gameType: { name: "game mới" },
                 href: "https://app.adjust.com/1sokpzx5"
+            },
+            {
+                id: 6,
+                name: "Loading......",
+                logoImage: "./images/loading.png",
+                type: 3,
+                gameType: { name: "Sắp ra mắt" },
+                href: ""
             }
             ];
 
@@ -178,6 +186,7 @@
                     totalReceived: 281,
                     type: 1,
                     text: "Nhận code game Linh Tiêu Giới",
+                    value: "Nhận code",
                 },
                 {
                     id: 2,
@@ -186,7 +195,8 @@
                     totalGiftcode: 500,
                     totalReceived: 412,
                     type: 2,
-                    text: "Nhận code game Thần Ma Giáng Thế",
+                    text: "Nhận phiếu nạp 200k game Thần Ma Giáng Thế",
+                    value: "Nhận phiếu nạp 200k",
                 },
                 {
                     id: 3,
@@ -196,6 +206,7 @@
                     totalReceived: 90,
                     type: 3,
                     text: "Nhận code game Đế Vương Đại Lục",
+                    value: "Nhận code",
                 },
                 {
                     id: 4,
@@ -205,6 +216,7 @@
                     totalReceived: 151,
                     type: 4,
                     text: "Nhận code game Infinity Kingdom",
+                    value: "Nhận code",
                 },
                 {
                     id: 5,
@@ -214,6 +226,7 @@
                     totalReceived: 124,
                     type: 5,
                     text: "Nhận code game Ethereal Slayer",
+                    value: "Nhận code",
                 }
 
             ];
@@ -528,7 +541,7 @@
                                                                                     href: `https://m.me/gmobilestudio?text=${encodeURIComponent(e.text)}`,
                                                                                     target: "_blank",
                                                                                     rel: "noopener noreferrer",
-                                                                                    children: "Nhận code"
+                                                                                    children: `${e.value}`
                                                                                 })
                                                                             ]
                                                                         })
