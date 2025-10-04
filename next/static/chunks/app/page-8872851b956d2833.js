@@ -234,12 +234,18 @@
             const dataWelfare = [
                 {
                     id: 1,
+                    title: "Sự kiện - Minh Nguyệt Chi Dạ",
+                    image: "./images/welfare/sk-minh-nguyet-chi-da.png",
+                    href: "https://www.facebook.com/share/p/1CeTmyGsHD/"
+                },
+                {
+                    id: 2,
                     title: "Hỗ trợ nạp x4",
                     image: "./images/welfare/ho-tro-nap-x4.png",
                     href: "https://www.facebook.com/share/p/16XdXvQTcm/"
                 },
                 {
-                    id: 2,
+                    id: 3,
                     title: "Người cũ quay về",
                     image: "./images/welfare/nguoi-cu-quay-ve.png",
                     href: "https://www.facebook.com/share/p/18Cjx6PyqD/"
