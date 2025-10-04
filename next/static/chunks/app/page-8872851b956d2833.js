@@ -492,8 +492,8 @@
                                                                             src: e.image,
                                                                             alt: e.title,
                                                                             style: {
-                                                                                width: "505px",
-                                                                                height: "266px",
+                                                                                maxWidth: "505px",
+                                                                                maxHeight: "266px",
                                                                                 objectFit: "cover",
                                                                                 borderRadius: "8px"
                                                                             }
