@@ -42,7 +42,7 @@
                 c = a.n(n);
             const data = {
                 data: [
-                    { image: '/images/tmgt/tmgt-banner.png', link: 'https://new.yxtgym.com/y92.0l110/EdIf1XkalZCqknYO0sCRwA/Icch.html' },
+                    { image: '/images/tmgt/tmgt-banner1.png', link: 'https://new.yxtgym.com/y92.0l110/EdIf1XkalZCqknYO0sCRwA/Icch.html' },
                     { image: './images/ltg/ltg-banner.jpg', link: 'http://www.poopogame.com/url/wIveb7A6' },
                     { image: './images/dvdl/dvdl-banner.jpg', link: 'http://www.poopogame.com/url/5JBLP9hD' },
                     { image: './images/tcq4d/tcq4d-banner.jpg', link: '' }
@@ -196,8 +196,8 @@
                     totalGiftcode: 500,
                     totalReceived: 412,
                     type: 2,
-                    text: "Nhận Free 200k nạp đầu game Thần Ma Giáng Thế",
-                    value: "Nhận free 200k nạp đầu",
+                    text: "Nhận code game Thần Ma Giáng Thế",
+                    value: "Nhận code",
                 },
                 {
                     id: 3,
@@ -275,7 +275,7 @@
             {
                 id: 2,
                 title: "Thần Ma Giáng Thế - Khai mở server lúc 13h thứ 4 & 7 hàng tuần",
-                image: "./images/tmgt/tmgt-banner.png",
+                image: "./images/tmgt/tmgt-banner1.png",
                 tag: [
                     { id: "tag2", name: "19-08-2025" }
                 ],
