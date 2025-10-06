@@ -351,7 +351,7 @@
                                                             if (e && e.listImageItem.length > 0) {
                                                                 if (t.A.get("popupHomeHistory"))
                                                                     return void O([]);
-                                                                O(e.listImageItem),
+                                                                //O(e.listImageItem),
                                                                     (0,
                                                                         g.QH)("popupHomeHistory", "show")
                                                             }
