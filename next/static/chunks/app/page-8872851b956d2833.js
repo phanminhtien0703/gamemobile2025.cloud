@@ -170,7 +170,7 @@
             },
             {
                 id: 6,
-                name: "Thiên Cơ Quyền 4D",
+                name: "Thần Cơ Ấn",
                 logoImage: "./images/tcq4d/tcq4d-logo.jpg",
                 type: 3,
                 gameType: { name: "Game mới" },
@@ -230,13 +230,13 @@
                     value: "Nhận code",
                 },
                 {
-                    id: 5,
-                    name: "Thiên Cơ Quyền 4D",
+                    id: 6,
+                    name: "Thần Cơ Ấn",
                     image: "./images/tcq4d/tcq4d-logo.jpg",
                     totalGiftcode: 200,
                     totalReceived: 54,
                     type: 6,
-                    text: "Nhận code game Thiên Cơ Quyền 4D",
+                    text: "Nhận code game Thần Cơ Ấn",
                     value: "Nhận code",
                 }
 
@@ -310,12 +310,12 @@
             },
             {
                 id: 6,
-                title: "Thiên Cơ Quyền 4D - Khai mở server lúc 00:10' Thứ 3 & 7 hàng tuần",
+                title: "Thần Cơ Ấn - Khai mở server lúc 00:10' Thứ 3 & 7 hàng tuần",
                 image: "./images/tcq4d/tcq4d-banner.jpg",
                 tag: [
                     { id: "tag6", name: "06-10-2025" }
                 ],
-                href: "https://app.adjust.com/1sokpzx5"
+                href: "#"
             }
             ];
 
