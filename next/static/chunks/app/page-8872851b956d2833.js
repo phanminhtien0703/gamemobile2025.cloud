@@ -44,7 +44,8 @@
                 data: [
                     { image: '/images/tmgt/tmgt-banner.png', link: 'https://new.yxtgym.com/y92.0l110/EdIf1XkalZCqknYO0sCRwA/Icch.html' },
                     { image: './images/ltg/ltg-banner.jpg', link: 'http://www.poopogame.com/url/wIveb7A6' },
-                    { image: './images/dvdl/dvdl-banner.jpg', link: 'http://www.poopogame.com/url/5JBLP9hD' }
+                    { image: './images/dvdl/dvdl-banner.jpg', link: 'http://www.poopogame.com/url/5JBLP9hD' },
+                    { image: './images/tcq4d/tcq4d-banner.jpg', link: '' }
                 ],
                 note: false // Hoặc true nếu muốn style khác cho pagination
             };
@@ -140,7 +141,7 @@
                 name: "Thần Ma Giáng Thế",
                 logoImage: "./images/tmgt/tmgt-logo.png",
                 type: 3,
-                gameType: { name: "game mới" },
+                gameType: { name: "game hot" },
                 href: "https://new.yxtgym.com/y92.0l110/EdIf1XkalZCqknYO0sCRwA/Icch.html"
             },
             {
@@ -169,10 +170,10 @@
             },
             {
                 id: 6,
-                name: "Loading......",
-                logoImage: "./images/loading.png",
+                name: "Thiên Cơ Quyền 4D",
+                logoImage: "./images/tcq4d/tcq4d-logo.jpg",
                 type: 3,
-                gameType: { name: "Sắp ra mắt" },
+                gameType: { name: "Game mới" },
                 href: ""
             }
             ];
@@ -195,8 +196,8 @@
                     totalGiftcode: 500,
                     totalReceived: 412,
                     type: 2,
-                    text: "Nhận phiếu nạp 200k game Thần Ma Giáng Thế",
-                    value: "Nhận phiếu nạp 200k",
+                    text: "Nhận Free 200k nạp đầu game Thần Ma Giáng Thế",
+                    value: "Nhận free 200k nạp đầu",
                 },
                 {
                     id: 3,
@@ -226,6 +227,16 @@
                     totalReceived: 124,
                     type: 5,
                     text: "Nhận code game Ethereal Slayer",
+                    value: "Nhận code",
+                },
+                {
+                    id: 5,
+                    name: "Thiên Cơ Quyền 4D",
+                    image: "./images/tcq4d/tcq4d-logo.jpg",
+                    totalGiftcode: 200,
+                    totalReceived: 54,
+                    type: 6,
+                    text: "Nhận code game Thiên Cơ Quyền 4D",
                     value: "Nhận code",
                 }
 
@@ -294,6 +305,15 @@
                 image: "./images/es/es-banner.jpg",
                 tag: [
                     { id: "tag5", name: "15-09-2025" }
+                ],
+                href: "https://app.adjust.com/1sokpzx5"
+            },
+            {
+                id: 6,
+                title: "Thiên Cơ Quyền 4D - Khai mở server lúc 00:10' Thứ 3 & 7 hàng tuần",
+                image: "./images/tcq4d/tcq4d-banner.jpg",
+                tag: [
+                    { id: "tag6", name: "06-10-2025" }
                 ],
                 href: "https://app.adjust.com/1sokpzx5"
             }
