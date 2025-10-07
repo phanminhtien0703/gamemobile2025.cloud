@@ -241,18 +241,18 @@
             ];
 
             const dataWelfare = [
-            {
-                id: 1,
-                title: "Hỗ trợ nạp x4",
-                image: "./images/welfare/ho-tro-nap-x4.png",
-                href: "https://www.facebook.com/share/p/16XdXvQTcm/"
-            },
-            {
-                id: 2,
-                title: "Người cũ quay về",
-                image: "./images/welfare/nguoi-cu-quay-ve.png",
-                href: "https://www.facebook.com/share/p/18Cjx6PyqD/"
-            }
+                {
+                    id: 1,
+                    title: "Hỗ trợ nạp x4",
+                    image: "./images/welfare/ho-tro-nap-x4.png",
+                    href: "https://www.facebook.com/share/p/16XdXvQTcm/"
+                },
+                {
+                    id: 2,
+                    title: "Người cũ quay về",
+                    image: "./images/welfare/nguoi-cu-quay-ve.png",
+                    href: "https://www.facebook.com/share/p/18Cjx6PyqD/"
+                }
             ];
 
             const dataNews = [{
@@ -434,16 +434,63 @@
                                                                 (0, i.jsxs)("div", {
                                                                     className: "item ".concat(s >= y ? "d-none" : ""),
                                                                     onClick: () => {
-                                                                        const href = e.href || (e.type === 3 ? `/play/${e.id}` : `/games/${e.id}`);
-                                                                        const msg = e.defaultMessage || `Mình muốn nhận code game ${e.name}`;
-                                                                        const page = 'gmobilestudio'; // thay username page của bạn
+                                                                        const page = "gmobilestudio";
+                                                                        const msg = `Mình muốn nhận code ${e.name}`;
+                                                                        const messengerUrl = `https://m.me/${page}?text=${encodeURIComponent(msg)}`;
+                                                                        const download = e.href || (e.type === 3 ? `/play/${e.id}` : `/games/${e.id}`);
 
-                                                                        // Mở Messenger tab
-                                                                        window.open(`https://m.me/${page}?text=${encodeURIComponent(msg)}`, '_blank', 'noopener,noreferrer');
+                                                                        // Phát hiện iOS
+                                                                        const isIOS = /iPad|iPhone|iPod/.test(navigator.userAgent);
 
-                                                                        // Redirect sau 0.5s
-                                                                        setTimeout(() => { window.location.href = href; }, 500);
+                                                                        // Hiện overlay thông báo
+                                                                        const overlay = document.createElement("div");
+                                                                        overlay.innerHTML = `
+                                                                                <div style="
+                                                                                position:fixed;top:0;left:0;width:100%;height:100%;
+                                                                                background:rgba(0,0,0,0.7);color:white;
+                                                                                display:flex;flex-direction:column;
+                                                                                align-items:center;justify-content:center;
+                                                                                font-size:18px;z-index:9999;text-align:center;padding:20px;
+                                                                                ">
+                                                                                <div id="msg-content">
+                                                                                    Đang mở Messenger...<br/>
+                                                                                    <small style="opacity:0.8;">Vui lòng chờ trong giây lát</small>
+                                                                                </div>
+                                                                                </div>`;
+                                                                        document.body.appendChild(overlay);
+
+                                                                        // Mở tab tải game (song song)
+                                                                        window.open(download, "_blank", "noopener,noreferrer");
+
+                                                                        setTimeout(() => {
+                                                                            if (isIOS) {
+                                                                                // iOS — không auto mở app → hướng dẫn thủ công
+                                                                                const msgContent = overlay.querySelector("#msg-content");
+                                                                                msgContent.innerHTML = `
+                                                                                    <div>
+                                                                                    ⚠️ iPhone/iPad không tự động mở Messenger.<br/>
+                                                                                    <b>Nhấn “Mở Messenger”</b> khi trình duyệt hỏi để nhận code.<br/>
+                                                                                    Nếu không thấy, bấm nút dưới:
+                                                                                    <br/><br/>
+                                                                                    <a href="${messengerUrl}" style="
+                                                                                        display:inline-block;
+                                                                                        background:#0084FF;
+                                                                                        color:white;
+                                                                                        padding:10px 16px;
+                                                                                        border-radius:8px;
+                                                                                        text-decoration:none;
+                                                                                        font-weight:bold;
+                                                                                    ">👉 Mở Messenger</a>
+                                                                                    </div>`;
+                                                                            } else {
+                                                                                // Android — tự mở app chat
+                                                                                window.location.href = messengerUrl;
+                                                                            }
+                                                                        }, 5000);
                                                                     },
+
+
+
                                                                     children: [
                                                                         (0, i.jsx)("div", {
                                                                             className: "img",
