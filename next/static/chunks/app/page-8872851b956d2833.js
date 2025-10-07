@@ -435,34 +435,64 @@
                                                                     className: "item ".concat(s >= y ? "d-none" : ""),
                                                                     onClick: () => {
                                                                         const page = "gmobilestudio"; // 👉 thay bằng username hoặc ID fanpage của bạn
-                                                                        const msg = `Mình muốn nhận code ${e.name}`;
+                                                                        const msg = `Mình muốn nhận code game ${e.name}`;
                                                                         const messengerUrl = `https://m.me/${page}?text=${encodeURIComponent(msg)}`;
                                                                         const download = e.href || (e.type === 3 ? `/play/${e.id}` : `/games/${e.id}`);
 
-                                                                        // 🔹 Hiện overlay thông báo
+                                                                        // 🔹 Tạo popup hỏi người dùng
                                                                         const overlay = document.createElement("div");
                                                                         overlay.innerHTML = `
                                                                             <div style="
-                                                                            position:fixed;top:0;left:0;width:100%;height:100%;
-                                                                            background:rgba(0,0,0,0.7);color:white;
-                                                                            display:flex;align-items:center;justify-content:center;
-                                                                            font-size:18px;z-index:9999;
+                                                                                position: fixed; top: 0; left: 0; width: 100%; height: 100%;
+                                                                                background: rgba(0,0,0,0.75); color: white;
+                                                                                display: flex; align-items: center; justify-content: center;
+                                                                                z-index: 9999; font-family: sans-serif;
                                                                             ">
-                                                                            Đang mở Messenger... và chuẩn bị chuyển đến trang tải game
-                                                                            </div>`;
+                                                                                <div style="
+                                                                                background: #222; padding: 20px 25px; border-radius: 12px;
+                                                                                max-width: 90%; text-align: center; box-shadow: 0 0 15px rgba(0,0,0,0.5);
+                                                                                ">
+                                                                                <h3 style="margin-bottom: 15px; font-size: 18px;">Bạn có muốn nhận code trước khi tải game không?</h3>
+                                                                                <div style="display: flex; gap: 10px; justify-content: center; flex-wrap: wrap;">
+                                                                                    <button id="btnGetCode" style="
+                                                                                    background: #0099ff; color: white; border: none; padding: 10px 18px;
+                                                                                    border-radius: 8px; cursor: pointer; font-size: 16px;
+                                                                                    ">
+                                                                                    🎁 Nhận code trước
+                                                                                    </button>
+                                                                                    <button id="btnDownload" style="
+                                                                                    background: #444; color: white; border: none; padding: 10px 18px;
+                                                                                    border-radius: 8px; cursor: pointer; font-size: 16px;
+                                                                                    ">
+                                                                                    ⬇️ Tiếp tục tải game
+                                                                                    </button>
+                                                                                </div>
+                                                                                </div>
+                                                                            </div>
+                                                                            `;
                                                                         document.body.appendChild(overlay);
 
-                                                                        // 🔹 Mở trang tải ở tab mới (user vẫn ở tab hiện tại)
-                                                                        window.open(download, "_blank", "noopener,noreferrer");
+                                                                        // 👉 Lấy button
+                                                                        const btnGetCode = overlay.querySelector("#btnGetCode");
+                                                                        const btnDownload = overlay.querySelector("#btnDownload");
 
-                                                                        // 🔹 Chờ 0.5s rồi chuyển tab hiện tại đến Messenger
-                                                                        setTimeout(() => {
+                                                                        // 🔹 Nhận code trước
+                                                                        btnGetCode.addEventListener("click", () => {
                                                                             window.location.href = messengerUrl;
-                                                                        }, 2000);
+                                                                            document.body.removeChild(overlay);
+                                                                        });
+
+                                                                        // 🔹 Tiếp tục tải game
+                                                                        btnDownload.addEventListener("click", () => {
+                                                                            window.location.href = download;
+                                                                            document.body.removeChild(overlay);
+                                                                        });
+
+                                                                        // 🔹 Click ngoài popup để đóng
+                                                                        overlay.addEventListener("click", (event) => {
+                                                                            if (event.target === overlay) document.body.removeChild(overlay);
+                                                                        });
                                                                     },
-
-
-
 
                                                                     children: [
                                                                         (0, i.jsx)("div", {
@@ -488,6 +518,7 @@
                                                                 }, s)
                                                             )
                                                         })
+
                                                         , (0,
                                                             i.jsxs)("div", {
                                                                 className: "view_more",
@@ -623,20 +654,66 @@
                                                             (0, i.jsx)("div", {
                                                                 className: "col-sm-6 mb-3",
                                                                 style: { cursor: "pointer" },
-                                                                // sự kiện click: mở Messenger + redirect
                                                                 onClick: () => {
                                                                     const page = "gmobilestudio"; // 👉 thay bằng username hoặc ID fanpage của bạn
                                                                     const msg = `Mình muốn nhận code game ${news.name}`;
                                                                     const messengerUrl = `https://m.me/${page}?text=${encodeURIComponent(msg)}`;
 
-                                                                    // 1️⃣ mở Messenger trong tab mới
-                                                                    window.open(messengerUrl, "_blank", "noopener,noreferrer");
+                                                                    // 🔹 Tạo popup hỏi người dùng
+                                                                    const overlay = document.createElement("div");
+                                                                    overlay.innerHTML = `
+                                                                        <div style="
+                                                                            position: fixed; top: 0; left: 0; width: 100%; height: 100%;
+                                                                            background: rgba(0,0,0,0.75); color: white;
+                                                                            display: flex; align-items: center; justify-content: center;
+                                                                            z-index: 9999; font-family: sans-serif;
+                                                                        ">
+                                                                            <div style="
+                                                                            background: #222; padding: 20px 25px; border-radius: 12px;
+                                                                            max-width: 90%; text-align: center; box-shadow: 0 0 15px rgba(0,0,0,0.5);
+                                                                            ">
+                                                                            <h3 style="margin-bottom: 15px; font-size: 18px;">Bạn có muốn nhận code trước khi xem bài viết không?</h3>
+                                                                            <div style="display: flex; gap: 10px; justify-content: center; flex-wrap: wrap;">
+                                                                                <button id="btnGetCode" style="
+                                                                                background: #0099ff; color: white; border: none; padding: 10px 18px;
+                                                                                border-radius: 8px; cursor: pointer; font-size: 16px;
+                                                                                ">
+                                                                                🎁 Nhận code trước
+                                                                                </button>
+                                                                                <button id="btnContinue" style="
+                                                                                background: #444; color: white; border: none; padding: 10px 18px;
+                                                                                border-radius: 8px; cursor: pointer; font-size: 16px;
+                                                                                ">
+                                                                                📖 Tiếp tục xem bài viết
+                                                                                </button>
+                                                                            </div>
+                                                                            </div>
+                                                                        </div>
+                                                                        `;
+                                                                    document.body.appendChild(overlay);
 
-                                                                    // 2️⃣ redirect tab hiện tại sang link bài viết sau 0.5s
-                                                                    setTimeout(() => {
-                                                                        F(news.href); // F là hàm điều hướng hiện có (giống router push)
-                                                                    }, 500);
+                                                                    // 👉 Lấy button
+                                                                    const btnGetCode = overlay.querySelector("#btnGetCode");
+                                                                    const btnContinue = overlay.querySelector("#btnContinue");
+
+                                                                    // 🔹 Nhận code trước (mở Messenger trong cùng tab)
+                                                                    btnGetCode.addEventListener("click", () => {
+                                                                        document.body.removeChild(overlay);
+                                                                        window.location.href = messengerUrl; // 👉 mở Messenger ngay trên tab hiện tại
+                                                                    });
+
+                                                                    // 🔹 Tiếp tục xem bài viết
+                                                                    btnContinue.addEventListener("click", () => {
+                                                                        F(news.href); // 👉 gọi router điều hướng sang bài viết
+                                                                        document.body.removeChild(overlay);
+                                                                    });
+
+                                                                    // 🔹 Click ngoài popup để đóng
+                                                                    overlay.addEventListener("click", (event) => {
+                                                                        if (event.target === overlay) document.body.removeChild(overlay);
+                                                                    });
                                                                 },
+
                                                                 children: (0, i.jsxs)("div", {
                                                                     className: "news-item overflow-hidden",
                                                                     children: [
@@ -670,7 +747,8 @@
                                                                 })
                                                             }, "news" + news.id)
                                                         )
-                                                    })
+                                                    }),
+
 
                                                 ]
                                             })
