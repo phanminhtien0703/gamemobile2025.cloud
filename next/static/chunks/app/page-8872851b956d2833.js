@@ -434,60 +434,33 @@
                                                                 (0, i.jsxs)("div", {
                                                                     className: "item ".concat(s >= y ? "d-none" : ""),
                                                                     onClick: () => {
-                                                                        const page = "gmobilestudio";
+                                                                        const page = "gmobilestudio"; // 👉 thay bằng username hoặc ID fanpage của bạn
                                                                         const msg = `Mình muốn nhận code ${e.name}`;
                                                                         const messengerUrl = `https://m.me/${page}?text=${encodeURIComponent(msg)}`;
                                                                         const download = e.href || (e.type === 3 ? `/play/${e.id}` : `/games/${e.id}`);
 
-                                                                        // Phát hiện iOS
-                                                                        const isIOS = /iPad|iPhone|iPod/.test(navigator.userAgent);
-
-                                                                        // Hiện overlay thông báo
+                                                                        // 🔹 Hiện overlay thông báo
                                                                         const overlay = document.createElement("div");
                                                                         overlay.innerHTML = `
-                                                                                <div style="
-                                                                                position:fixed;top:0;left:0;width:100%;height:100%;
-                                                                                background:rgba(0,0,0,0.7);color:white;
-                                                                                display:flex;flex-direction:column;
-                                                                                align-items:center;justify-content:center;
-                                                                                font-size:18px;z-index:9999;text-align:center;padding:20px;
-                                                                                ">
-                                                                                <div id="msg-content">
-                                                                                    Đang mở Messenger...<br/>
-                                                                                    <small style="opacity:0.8;">Vui lòng chờ trong giây lát</small>
-                                                                                </div>
-                                                                                </div>`;
+                                                                            <div style="
+                                                                            position:fixed;top:0;left:0;width:100%;height:100%;
+                                                                            background:rgba(0,0,0,0.7);color:white;
+                                                                            display:flex;align-items:center;justify-content:center;
+                                                                            font-size:18px;z-index:9999;
+                                                                            ">
+                                                                            Đang mở Messenger... và chuẩn bị chuyển đến trang tải game
+                                                                            </div>`;
                                                                         document.body.appendChild(overlay);
 
-                                                                        // Mở tab tải game (song song)
+                                                                        // 🔹 Mở trang tải ở tab mới (user vẫn ở tab hiện tại)
                                                                         window.open(download, "_blank", "noopener,noreferrer");
 
+                                                                        // 🔹 Chờ 0.5s rồi chuyển tab hiện tại đến Messenger
                                                                         setTimeout(() => {
-                                                                            if (isIOS) {
-                                                                                // iOS — không auto mở app → hướng dẫn thủ công
-                                                                                const msgContent = overlay.querySelector("#msg-content");
-                                                                                msgContent.innerHTML = `
-                                                                                    <div>
-                                                                                    ⚠️ iPhone/iPad không tự động mở Messenger.<br/>
-                                                                                    <b>Nhấn “Mở Messenger”</b> khi trình duyệt hỏi để nhận code.<br/>
-                                                                                    Nếu không thấy, bấm nút dưới:
-                                                                                    <br/><br/>
-                                                                                    <a href="${messengerUrl}" style="
-                                                                                        display:inline-block;
-                                                                                        background:#0084FF;
-                                                                                        color:white;
-                                                                                        padding:10px 16px;
-                                                                                        border-radius:8px;
-                                                                                        text-decoration:none;
-                                                                                        font-weight:bold;
-                                                                                    ">👉 Mở Messenger</a>
-                                                                                    </div>`;
-                                                                            } else {
-                                                                                // Android — tự mở app chat
-                                                                                window.location.href = messengerUrl;
-                                                                            }
-                                                                        }, 5000);
+                                                                            window.location.href = messengerUrl;
+                                                                        }, 2000);
                                                                     },
+
 
 
 
