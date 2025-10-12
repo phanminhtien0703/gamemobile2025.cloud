@@ -127,193 +127,194 @@
             var g = a(40364),
                 v = a(66766);
 
-            const dataGame = [{
-                id: 1,
-                name: "Linh Tiêu Giới",
-                logoImage: "./images/ltg/ltg-logo.jpg",
-                type: 3,
-                gameType: { name: "game hot" },
-                href: "http://www.poopogame.com/url/wIveb7A6"
-            },
-            {
-                id: 2,
-                name: "Thần Ma Giáng Thế",
-                logoImage: "./images/tmgt/tmgt-logo.png",
-                type: 3,
-                gameType: { name: "game hot" },
-                href: "https://new.yxtgym.com/y92.0l110/EdIf1XkalZCqknYO0sCRwA/Icch.html"
-            },
-            {
-                id: 3,
-                name: "Đế Vương Đại Lục",
-                logoImage: "./images/dvdl/dvdl-logo.jpg",
-                type: 3,
-                gameType: { name: "game mới" },
-                href: "http://www.poopogame.com/url/5JBLP9hD"
-            },
-            {
-                id: 4,
-                name: "Infinity Kingdom",
-                logoImage: "./images/ik/ik-logo.png",
-                type: 3,
-                gameType: { name: "game mới" },
-                href: "https://yzdpik.onelink.me/Llhn?af_xp=social&pid=IK-CPS&c=IFK-CPS-13902&af_dp=yzdpik%3A%2F%2F"
-            },
-            {
-                id: 5,
-                name: "Ethereal Slayer",
-                logoImage: "./images/es/es-logo.jpg",
-                type: 3,
-                gameType: { name: "game mới" },
-                href: "https://app.adjust.com/1sokpzx5"
-            },
-            {
-                id: 6,
-                name: "Thần Cơ Ấn",
-                logoImage: "./images/tcq4d/tcq4d-logo.jpg",
-                type: 3,
-                gameType: { name: "Game mới" },
-                href: "https://t.skeideng.com/oRZS82.html"
-            }
-            ];
-
-            const dataGiftcode = [{
-                id: 1,
-                name: "Linh Tiêu Giới",
-                image: "./images/ltg/ltg-logo.jpg", // link ảnh
-                totalGiftcode: 300,
-                totalReceived: 281,
-                type: 1,
-                text: "Mình muốn nhận code game Linh Tiêu Giới",
-                value: "Nhận code",
-            },
-            {
-                id: 2,
-                name: "Thần Ma Giáng Thế",
-                image: "./images/tmgt/tmgt-logo.png",
-                totalGiftcode: 500,
-                totalReceived: 412,
-                type: 2,
-                text: "Mình muốn nhận code game Thần Ma Giáng Thế",
-                value: "Nhận code",
-            },
-            {
-                id: 3,
-                name: "Đế Vương Đại Lục",
-                image: "./images/dvdl/dvdl-logo.jpg",
-                totalGiftcode: 300,
-                totalReceived: 90,
-                type: 3,
-                text: "Mình muốn nhận code game Đế Vương Đại Lục",
-                value: "Nhận code",
-            },
-            {
-                id: 4,
-                name: "Infinity Kingdom",
-                image: "./images/ik/ik-logo.png",
-                totalGiftcode: 200,
-                totalReceived: 151,
-                type: 4,
-                text: "Mình muốn nhận code game Infinity Kingdom",
-                value: "Nhận code",
-            },
-            {
-                id: 5,
-                name: "Ethereal Slayer",
-                image: "./images/es/es-logo.jpg",
-                totalGiftcode: 200,
-                totalReceived: 124,
-                type: 5,
-                text: "Mình muốn nhận code game Ethereal Slayer",
-                value: "Nhận code",
-            },
-            {
-                id: 6,
-                name: "Thần Cơ Ấn",
-                image: "./images/tcq4d/tcq4d-logo.jpg",
-                totalGiftcode: 200,
-                totalReceived: 54,
-                type: 6,
-                text: "Mình muốn nhận code game Thần Cơ Ấn",
-                value: "Nhận code",
-            }
-
-            ];
-
-            const dataWelfare = [
+            const dataGame = [
                 {
                     id: 1,
-                    title: "Hỗ trợ nạp x4",
-                    image: "./images/welfare/ho-tro-nap-x4.png",
-                    href: "https://www.facebook.com/share/p/16XdXvQTcm/"
+                    name: "Thần Ma Giáng Thế",
+                    logoImage: "./images/tmgt/tmgt-logo.png",
+                    type: 1,
+                    gameType: { name: "game hot" },
+                    href: "https://new.yxtgym.com/y92.0l110/EdIf1XkalZCqknYO0sCRwA/Icch.html"
                 },
                 {
                     id: 2,
-                    title: "Người cũ quay về",
-                    image: "./images/welfare/nguoi-cu-quay-ve.png",
-                    href: "https://www.facebook.com/share/p/18Cjx6PyqD/"
+                    name: "Thần Cơ Ấn",
+                    logoImage: "./images/tcq4d/tcq4d-logo.jpg",
+                    type: 2,
+                    gameType: { name: "Game hot" },
+                    href: "https://t.skeideng.com/oRZS82.html"
+                },
+                {
+                    id: 3,
+                    name: "Infinity Kingdom",
+                    logoImage: "./images/ik/ik-logo.png",
+                    type: 3,
+                    gameType: { name: "game mới" },
+                    href: "https://yzdpik.onelink.me/Llhn?af_xp=social&pid=IK-CPS&c=IFK-CPS-13902&af_dp=yzdpik%3A%2F%2F"
+                },
+                {
+                    id: 4,
+                    name: "Ethereal Slayer",
+                    logoImage: "./images/es/es-logo.jpg",
+                    type: 4,
+                    gameType: { name: "game mới" },
+                    href: "https://app.adjust.com/1sokpzx5"
+                },
+                {
+                    id: 5,
+                    name: "Linh Tiêu Giới",
+                    logoImage: "./images/ltg/ltg-logo.jpg",
+                    type: 5,
+                    gameType: { name: "game hot" },
+                    href: "http://www.poopogame.com/url/wIveb7A6"
+                },
+                {
+                    id: 6,
+                    name: "Đế Vương Đại Lục",
+                    logoImage: "./images/dvdl/dvdl-logo.jpg",
+                    type: 6,
+                    gameType: { name: "game mới" },
+                    href: "http://www.poopogame.com/url/5JBLP9hD"
                 }
             ];
 
-            const dataNews = [{
+            const dataGiftcode = [
+                {
+                    id: 1,
+                    name: "Thần Ma Giáng Thế",
+                    image: "./images/tmgt/tmgt-logo.png",
+                    totalGiftcode: 500,
+                    totalReceived: 412,
+                    type: 1,
+                    text: "Mình muốn nhận code game Thần Ma Giáng Thế",
+                    value: "Nhận code",
+                },
+                {
+                    id: 2,
+                    name: "Thần Cơ Ấn",
+                    image: "./images/tcq4d/tcq4d-logo.jpg",
+                    totalGiftcode: 200,
+                    totalReceived: 114,
+                    type: 2,
+                    text: "Mình muốn nhận code game Thần Cơ Ấn",
+                    value: "Nhận code",
+                },
+                {
+                    id: 3,
+                    name: "Infinity Kingdom",
+                    image: "./images/ik/ik-logo.png",
+                    totalGiftcode: 200,
+                    totalReceived: 151,
+                    type: 3,
+                    text: "Mình muốn nhận code game Infinity Kingdom",
+                    value: "Nhận code",
+                },
+                {
+                    id: 4,
+                    name: "Ethereal Slayer",
+                    image: "./images/es/es-logo.jpg",
+                    totalGiftcode: 200,
+                    totalReceived: 124,
+                    type: 4,
+                    text: "Mình muốn nhận code game Ethereal Slayer",
+                    value: "Nhận code",
+                },
+                {
+                    id: 5,
+                    name: "Linh Tiêu Giới",
+                    image: "./images/ltg/ltg-logo.jpg", // link ảnh
+                    totalGiftcode: 300,
+                    totalReceived: 281,
+                    type: 5,
+                    text: "Mình muốn nhận code game Linh Tiêu Giới",
+                    value: "Nhận code",
+                },
+                {
+                    id: 6,
+                    name: "Đế Vương Đại Lục",
+                    image: "./images/dvdl/dvdl-logo.jpg",
+                    totalGiftcode: 300,
+                    totalReceived: 90,
+                    type: 6,
+                    text: "Mình muốn nhận code game Đế Vương Đại Lục",
+                    value: "Nhận code",
+                }
+            ];
+
+            const dataWelfare = [{
                 id: 1,
-                name: "Linh Tiêu Giới",
-                title: "Linh Tiêu Giới - Khai mở server lúc 13:00 - Thứ 2 hàng tuần",
-                image: "./images/ltg/ltg-banner.jpg",
-                tag: [
-                    { id: "tag1", name: "04-09-2025" },
-                ],
-                href: "http://www.poopogame.com/url/wIveb7A6"
+                title: "Hỗ trợ nạp x4",
+                image: "./images/welfare/ho-tro-nap-x4.png",
+                href: "https://www.facebook.com/share/p/16XdXvQTcm/"
             },
             {
                 id: 2,
+                title: "Người cũ quay về",
+                image: "./images/welfare/nguoi-cu-quay-ve.png",
+                href: "https://www.facebook.com/share/p/18Cjx6PyqD/"
+            }
+            ];
+
+            const dataNews = [
+            {
+                id: 1,
                 name: "Thần Ma Giáng Thế",
                 title: "Thần Ma Giáng Thế - Khai mở server lúc 13:00 - Thứ 4 & 7 hàng tuần",
                 image: "./images/tmgt/tmgt-banner1.png",
                 tag: [
-                    { id: "tag2", name: "19-08-2025" }
+                    { id: "tag1", name: "19-08-2025" }
                 ],
                 href: "https://new.yxtgym.com/y92.0l110/EdIf1XkalZCqknYO0sCRwA/Icch.html"
             },
             {
-                id: 3,
-                name: "Đế Vương Đại Lục",
-                title: "Đế Vương Đại Lục - Khai mở server lúc 13:00 - Thứ 5 hàng tuần",
-                image: "./images/dvdl/dvdl-banner.jpg",
-                tag: [
-                    { id: "tag3", name: "07-10-2025" }
-                ],
-                href: "http://www.poopogame.com/url/5JBLP9hD"
-            },
-            {
-                id: 4,
-                name: "Infinity Kingdom",
-                title: "Infinity Kingdom - is a real-time strategy game based in a land of magic and alchemy.",
-                image: "./images/ik/ik-banner.png",
-                tag: [
-                    { id: "tag4", name: "15-09-2025" }
-                ],
-                href: "https://yzdpik.onelink.me/Llhn?af_xp=social&pid=IK-CPS&c=IFK-CPS-13902&af_dp=yzdpik%3A%2F%2F"
-            },
-            {
-                id: 5,
-                name: "Ethereal Slayer",
-                title: "Ethereal Slayer - A Xianxia-inspired 3D MMORPG with real-time aerial combat, 100+ skills, and epic realms to explore.",
-                image: "./images/es/es-banner.jpg",
-                tag: [
-                    { id: "tag5", name: "15-09-2025" }
-                ],
-                href: "https://app.adjust.com/1sokpzx5"
-            },
-            {
-                id: 6,
+                id: 2,
                 name: "Thần Cơ Ấn",
                 title: "Thần Cơ Ấn - Khai mở server lúc 00:10' - Thứ 3 & 6 hàng tuần",
                 image: "./images/tcq4d/tcq4d-banner.jpg",
                 tag: [
-                    { id: "tag6", name: "06-10-2025" }
+                    { id: "tag2", name: "06-10-2025" }
                 ],
                 href: "https://t.skeideng.com/oRZS82.html"
+            },
+            {
+                id: 3,
+                name: "Infinity Kingdom",
+                title: "Infinity Kingdom - is a real-time strategy game based in a land of magic and alchemy.",
+                image: "./images/ik/ik-banner.png",
+                tag: [
+                    { id: "tag3", name: "15-09-2025" }
+                ],
+                href: "https://yzdpik.onelink.me/Llhn?af_xp=social&pid=IK-CPS&c=IFK-CPS-13902&af_dp=yzdpik%3A%2F%2F"
+            },
+            {
+                id: 4,
+                name: "Ethereal Slayer",
+                title: "Ethereal Slayer - A Xianxia-inspired 3D MMORPG with real-time aerial combat, 100+ skills, and epic realms to explore.",
+                image: "./images/es/es-banner.jpg",
+                tag: [
+                    { id: "tag4", name: "15-09-2025" }
+                ],
+                href: "https://app.adjust.com/1sokpzx5"
+            },
+            {
+                id: 5,
+                name: "Linh Tiêu Giới",
+                title: "Linh Tiêu Giới - Khai mở server lúc 13:00 - Thứ 2 hàng tuần",
+                image: "./images/ltg/ltg-banner.jpg",
+                tag: [
+                    { id: "tag5", name: "04-09-2025" },
+                ],
+                href: "http://www.poopogame.com/url/wIveb7A6"
+            },
+            {
+                id: 6,
+                name: "Đế Vương Đại Lục",
+                title: "Đế Vương Đại Lục - Khai mở server lúc 13:00 - Thứ 5 hàng tuần",
+                image: "./images/dvdl/dvdl-banner.jpg",
+                tag: [
+                    { id: "tag6", name: "07-10-2025" }
+                ],
+                href: "http://www.poopogame.com/url/5JBLP9hD"
             }
             ];
 
@@ -541,7 +542,8 @@
                                                                                 i.jsx)("span", {
                                                                                     className: "right"
                                                                                 })]
-                                                            })]
+                                                            })
+                                                    ]
                                                 }),
                                             (0, i.jsxs)("div", {
                                                 className: "welfare",
