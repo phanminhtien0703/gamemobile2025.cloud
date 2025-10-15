@@ -258,17 +258,17 @@
                     title: "Thần Ma Giáng Thế - Khai mở server lúc 13:00 - Thứ 4 & 7 hàng tuần",
                     image: "./images/tmgt/tmgt-banner1.png",
                     tag: [
-                        { id: "tag1", name: "19-08-2025" }
+                        { id: "tag1", name: "Cập nhật: 15-10-2025" }
                     ],
                     href: "https://new.yxtgym.com/y92.0l110/EdIf1XkalZCqknYO0sCRwA/Icch.html"
                 },
                 {
                     id: 2,
                     name: "Thần Cơ Ấn",
-                    title: "Thần Cơ Ấn - Khai mở server lúc 00:10' - Thứ 3 & 6 hàng tuần",
+                    title: "Thần Cơ Ấn - Khai mở server lúc 13:00' - Thứ 3 & 5 & 7 hàng tuần",
                     image: "./images/tcq4d/tcq4d-banner.jpg",
                     tag: [
-                        { id: "tag2", name: "06-10-2025" }
+                        { id: "tag2", name: "Cập nhật: 15-10-2025" }
                     ],
                     href: "https://t.skeideng.com/oRZS82.html"
                 },
@@ -278,7 +278,7 @@
                     title: "Infinity Kingdom - is a real-time strategy game based in a land of magic and alchemy.",
                     image: "./images/ik/ik-banner.png",
                     tag: [
-                        { id: "tag3", name: "15-09-2025" }
+                        { id: "tag3", name: "Cập nhật: 15-09-2025" }
                     ],
                     href: "https://yzdpik.onelink.me/Llhn?af_xp=social&pid=IK-CPS&c=IFK-CPS-13902&af_dp=yzdpik%3A%2F%2F"
                 },
@@ -288,17 +288,17 @@
                     title: "Ethereal Slayer - A Xianxia-inspired 3D MMORPG with real-time aerial combat, 100+ skills, and epic realms to explore.",
                     image: "./images/es/es-banner.jpg",
                     tag: [
-                        { id: "tag4", name: "15-09-2025" }
+                        { id: "tag4", name: "Cập nhật: 15-09-2025" }
                     ],
                     href: "https://app.adjust.com/1sokpzx5"
                 },
                 {
                     id: 6,
                     name: "Đế Vương Đại Lục",
-                    title: "Đế Vương Đại Lục - Khai mở server lúc 13:00 - Thứ 5 hàng tuần",
+                    title: "Đế Vương Đại Lục - Khai mở server lúc 13:00 - Thứ 2 hàng tuần",
                     image: "./images/dvdl/dvdl-banner.jpg",
                     tag: [
-                        { id: "tag6", name: "07-10-2025" }
+                        { id: "tag6", name: "Cập nhật: 07-10-2025" }
                     ],
                     href: "http://www.poopogame.com/url/5JBLP9hD"
                 }
