@@ -243,6 +243,12 @@
 
             const dataWelfare = [{
                 id: 1,
+                title: "Hỗ Trợ Chuyển Game",
+                image: "./images/welfare/ho-tro-chuyen-doi.jpg",
+                href: "https://www.facebook.com/share/p/19wsN8g2Ey/"
+            },
+            {
+                id: 1,
                 title: "Hỗ trợ nạp x4",
                 image: "./images/welfare/ho-tro-nap-x4.png",
                 href: "https://www.facebook.com/share/p/16XdXvQTcm/"
@@ -256,66 +262,66 @@
             ];
 
             const dataNews = [
-            {
-                id: 1,
-                name: "Thần Ma Giáng Thế",
-                title: "Thần Ma Giáng Thế - Khai mở server lúc 13:00 - Thứ 4 & 7 hàng tuần",
-                image: "./images/tmgt/tmgt-banner1.png",
-                tag: [
-                    { id: "tag1", name: "19-08-2025" }
-                ],
-                href: "https://new.yxtgym.com/y92.0l110/EdIf1XkalZCqknYO0sCRwA/Icch.html"
-            },
-            {
-                id: 2,
-                name: "Thần Cơ Ấn",
-                title: "Thần Cơ Ấn - Khai mở server lúc 00:10' - Thứ 3 & 6 hàng tuần",
-                image: "./images/tcq4d/tcq4d-banner.jpg",
-                tag: [
-                    { id: "tag2", name: "06-10-2025" }
-                ],
-                href: "https://t.skeideng.com/oRZS82.html"
-            },
-            {
-                id: 3,
-                name: "Infinity Kingdom",
-                title: "Infinity Kingdom - is a real-time strategy game based in a land of magic and alchemy.",
-                image: "./images/ik/ik-banner.png",
-                tag: [
-                    { id: "tag3", name: "15-09-2025" }
-                ],
-                href: "https://yzdpik.onelink.me/Llhn?af_xp=social&pid=IK-CPS&c=IFK-CPS-13902&af_dp=yzdpik%3A%2F%2F"
-            },
-            {
-                id: 4,
-                name: "Ethereal Slayer",
-                title: "Ethereal Slayer - A Xianxia-inspired 3D MMORPG with real-time aerial combat, 100+ skills, and epic realms to explore.",
-                image: "./images/es/es-banner.jpg",
-                tag: [
-                    { id: "tag4", name: "15-09-2025" }
-                ],
-                href: "https://app.adjust.com/1sokpzx5"
-            },
-            {
-                id: 5,
-                name: "Linh Tiêu Giới",
-                title: "Linh Tiêu Giới - Khai mở server lúc 13:00 - Thứ 2 hàng tuần",
-                image: "./images/ltg/ltg-banner.jpg",
-                tag: [
-                    { id: "tag5", name: "04-09-2025" },
-                ],
-                href: "http://www.poopogame.com/url/wIveb7A6"
-            },
-            {
-                id: 6,
-                name: "Đế Vương Đại Lục",
-                title: "Đế Vương Đại Lục - Khai mở server lúc 13:00 - Thứ 5 hàng tuần",
-                image: "./images/dvdl/dvdl-banner.jpg",
-                tag: [
-                    { id: "tag6", name: "07-10-2025" }
-                ],
-                href: "http://www.poopogame.com/url/5JBLP9hD"
-            }
+                {
+                    id: 1,
+                    name: "Thần Ma Giáng Thế",
+                    title: "Thần Ma Giáng Thế - Khai mở server lúc 13:00 - Thứ 4 & 7 hàng tuần",
+                    image: "./images/tmgt/tmgt-banner1.png",
+                    tag: [
+                        { id: "tag1", name: "19-08-2025" }
+                    ],
+                    href: "https://new.yxtgym.com/y92.0l110/EdIf1XkalZCqknYO0sCRwA/Icch.html"
+                },
+                {
+                    id: 2,
+                    name: "Thần Cơ Ấn",
+                    title: "Thần Cơ Ấn - Khai mở server lúc 00:10' - Thứ 3 & 6 hàng tuần",
+                    image: "./images/tcq4d/tcq4d-banner.jpg",
+                    tag: [
+                        { id: "tag2", name: "06-10-2025" }
+                    ],
+                    href: "https://t.skeideng.com/oRZS82.html"
+                },
+                {
+                    id: 3,
+                    name: "Infinity Kingdom",
+                    title: "Infinity Kingdom - is a real-time strategy game based in a land of magic and alchemy.",
+                    image: "./images/ik/ik-banner.png",
+                    tag: [
+                        { id: "tag3", name: "15-09-2025" }
+                    ],
+                    href: "https://yzdpik.onelink.me/Llhn?af_xp=social&pid=IK-CPS&c=IFK-CPS-13902&af_dp=yzdpik%3A%2F%2F"
+                },
+                {
+                    id: 4,
+                    name: "Ethereal Slayer",
+                    title: "Ethereal Slayer - A Xianxia-inspired 3D MMORPG with real-time aerial combat, 100+ skills, and epic realms to explore.",
+                    image: "./images/es/es-banner.jpg",
+                    tag: [
+                        { id: "tag4", name: "15-09-2025" }
+                    ],
+                    href: "https://app.adjust.com/1sokpzx5"
+                },
+                {
+                    id: 5,
+                    name: "Linh Tiêu Giới",
+                    title: "Linh Tiêu Giới - Khai mở server lúc 13:00 - Thứ 2 hàng tuần",
+                    image: "./images/ltg/ltg-banner.jpg",
+                    tag: [
+                        { id: "tag5", name: "04-09-2025" },
+                    ],
+                    href: "http://www.poopogame.com/url/wIveb7A6"
+                },
+                {
+                    id: 6,
+                    name: "Đế Vương Đại Lục",
+                    title: "Đế Vương Đại Lục - Khai mở server lúc 13:00 - Thứ 5 hàng tuần",
+                    image: "./images/dvdl/dvdl-banner.jpg",
+                    tag: [
+                        { id: "tag6", name: "07-10-2025" }
+                    ],
+                    href: "http://www.poopogame.com/url/5JBLP9hD"
+                }
             ];
 
             const dataMenu = [{
