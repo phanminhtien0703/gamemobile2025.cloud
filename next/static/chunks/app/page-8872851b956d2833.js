@@ -163,10 +163,10 @@
                 {
                     id: 5,
                     name: "Linh Tiêu Giới",
-                    logoImage: "./images/ltg/ltg-logo.jpg",
+                    logoImage: "./images/ltg/ltg-logo.png",
                     type: 5,
-                    gameType: { name: "game hot" },
-                    href: "http://www.poopogame.com/url/wIveb7A6"
+                    gameType: { name: "Ngừng phát hành" },
+                    href: "https://www.facebook.com/share/p/1BVRK3hVUv/"
                 },
                 {
                     id: 6,
@@ -217,16 +217,6 @@
                     totalReceived: 124,
                     type: 4,
                     text: "Mình muốn nhận code game Ethereal Slayer",
-                    value: "Nhận code",
-                },
-                {
-                    id: 5,
-                    name: "Linh Tiêu Giới",
-                    image: "./images/ltg/ltg-logo.jpg", // link ảnh
-                    totalGiftcode: 300,
-                    totalReceived: 281,
-                    type: 5,
-                    text: "Mình muốn nhận code game Linh Tiêu Giới",
                     value: "Nhận code",
                 },
                 {
@@ -301,16 +291,6 @@
                         { id: "tag4", name: "15-09-2025" }
                     ],
                     href: "https://app.adjust.com/1sokpzx5"
-                },
-                {
-                    id: 5,
-                    name: "Linh Tiêu Giới",
-                    title: "Linh Tiêu Giới - Khai mở server lúc 13:00 - Thứ 2 hàng tuần",
-                    image: "./images/ltg/ltg-banner.jpg",
-                    tag: [
-                        { id: "tag5", name: "04-09-2025" },
-                    ],
-                    href: "http://www.poopogame.com/url/wIveb7A6"
                 },
                 {
                     id: 6,
