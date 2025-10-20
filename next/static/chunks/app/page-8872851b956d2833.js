@@ -255,7 +255,7 @@
                 {
                     id: 1,
                     name: "Thần Ma Giáng Thế",
-                    title: "Thần Ma Giáng Thế - Khai mở server lúc 13:00 - Thứ 4 & 7 hàng tuần",
+                    title: "Thần Ma Giáng Thế - Khai mở server lúc 13:00 Thứ 2-4-6 hàng tuần",
                     image: "./images/tmgt/tmgt-banner1.png",
                     tag: [
                         { id: "tag1", name: "Cập nhật: 15-10-2025" }
@@ -265,7 +265,7 @@
                 {
                     id: 2,
                     name: "Thần Cơ Ấn",
-                    title: "Thần Cơ Ấn - Khai mở server lúc 13:00' - Thứ 3 & 5 & 7 hàng tuần",
+                    title: "Thần Cơ Ấn - Khai mở server lúc 13:00 Thứ 3-5-7 hàng tuần",
                     image: "./images/tcq4d/tcq4d-banner.jpg",
                     tag: [
                         { id: "tag2", name: "Cập nhật: 15-10-2025" }
