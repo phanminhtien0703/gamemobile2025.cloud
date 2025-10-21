@@ -347,7 +347,7 @@
                                                 t.jsxs)("label", {
                                                 role: "button",
                                                 children: [(0,
-                                                    t.jsx)("https://www.facebook.com/gmobilestudio", {}), " Hỗ trợ"]
+                                                    t.jsx)("https://www.facebook.com/gamemobile.phoenix", {}), " Hỗ trợ"]
                                             })
                                         })
                                     }), (0,

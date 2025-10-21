@@ -199,7 +199,7 @@
                     name: "Giftcode",
                     giftCode: !0,
                     icon: a.mY,
-                    path: ("https://www.facebook.com/gmobilestudio")
+                    path: ("https://www.facebook.com/gamemobile.phoenix")
                 }, {
                     target: "_self",
                     name: "Trang chủ",
@@ -226,7 +226,7 @@
                     target: "_self",
                     name: "Hỗ trợ",
                     icon: a.nP,
-                    path: "https://www.facebook.com/gmobilestudio"
+                    path: "https://www.facebook.com/gamemobile.phoenix"
                 }, {
                     target: "_self",
                     name: "T\xe0i khoản",
@@ -252,7 +252,7 @@
                             })]
                         })
                     },
-                    path: ("https://www.facebook.com/gmobilestudio")
+                    path: ("https://www.facebook.com/gamemobile.phoenix")
                 }],
                 n = [{
                     name: "Trải nghiệm game",
