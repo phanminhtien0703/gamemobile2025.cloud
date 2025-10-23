@@ -43,7 +43,6 @@
                 data: [
                     { image: '/images/tmgt/tmgt-banner1.png', link: 'https://new.yxtgym.com/y92.0l110/EdIf1XkalZCqknYO0sCRwA/Icch.html' },
                     { image: './images/ltg/ltg-banner.jpg', link: 'http://www.poopogame.com/url/wIveb7A6' },
-                    { image: './images/dvdl/dvdl-banner.jpg', link: 'http://www.poopogame.com/url/5JBLP9hD' },
                     { image: './images/tcq4d/tcq4d-banner.jpg', link: 'https://t.skeideng.com/oRZS82.html' }
                 ],
                 note: false // Hoặc true nếu muốn style khác cho pagination
@@ -167,14 +166,6 @@
                     type: 5,
                     gameType: { name: "Ngừng phát hành" },
                     href: "https://www.facebook.com/share/p/1BVRK3hVUv/"
-                },
-                {
-                    id: 6,
-                    name: "Đế Vương Đại Lục",
-                    logoImage: "./images/dvdl/dvdl-logo.jpg",
-                    type: 6,
-                    gameType: { name: "game mới" },
-                    href: "http://www.poopogame.com/url/5JBLP9hD"
                 }
             ];
 
@@ -217,16 +208,6 @@
                     totalReceived: 124,
                     type: 4,
                     text: "Mình muốn nhận code game Ethereal Slayer",
-                    value: "Nhận code",
-                },
-                {
-                    id: 6,
-                    name: "Đế Vương Đại Lục",
-                    image: "./images/dvdl/dvdl-logo.jpg",
-                    totalGiftcode: 300,
-                    totalReceived: 90,
-                    type: 6,
-                    text: "Mình muốn nhận code game Đế Vương Đại Lục",
                     value: "Nhận code",
                 }
             ];
@@ -291,16 +272,6 @@
                         { id: "tag4", name: "Cập nhật: 15-09-2025" }
                     ],
                     href: "https://app.adjust.com/1sokpzx5"
-                },
-                {
-                    id: 6,
-                    name: "Đế Vương Đại Lục",
-                    title: "Đế Vương Đại Lục - Khai mở server lúc 13:00 - Thứ 2 hàng tuần",
-                    image: "./images/dvdl/dvdl-banner.jpg",
-                    tag: [
-                        { id: "tag6", name: "Cập nhật: 07-10-2025" }
-                    ],
-                    href: "http://www.poopogame.com/url/5JBLP9hD"
                 }
             ];
 
