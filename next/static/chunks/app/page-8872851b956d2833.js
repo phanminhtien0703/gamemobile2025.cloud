@@ -278,7 +278,7 @@
             const dataMenu = [{
                 id: 1,
                 name: "Hỗ trợ",
-                link: "https://www.facebook.com/gamemobile.phoenix"
+                link: "https://rebrand.ly/gms-p"
             },]
 
             let N = () => {
@@ -392,7 +392,7 @@
                                                                 (0, i.jsxs)("div", {
                                                                     className: "item ".concat(s >= y ? "d-none" : ""),
                                                                     onClick: () => {
-                                                                        const page = "gamemobile.phoenix"; // 👉 thay bằng username hoặc ID fanpage của bạn
+                                                                        const page = "game.mobile.studio.phoenix"; // 👉 thay bằng username hoặc ID fanpage của bạn
                                                                         const msg = `Mình muốn nhận code game ${e.name}`;
                                                                         const messengerUrl = `https://m.me/${page}?text=${encodeURIComponent(msg)}`;
                                                                         const download = e.href || (e.type === 3 ? `/play/${e.id}` : `/games/${e.id}`);
@@ -584,7 +584,7 @@
                                                                                 (0, i.jsx)("p", { children: `Người nhận: ${e.totalReceived || 0}` }),
                                                                                 (0, i.jsx)("a", {
                                                                                     className: "btn",
-                                                                                    href: `https://m.me/gamemobile.phoenix?text=${encodeURIComponent(e.text)}`,
+                                                                                    href: `https://m.me/game.mobile.studio.phoenix?text=${encodeURIComponent(e.text)}`,
                                                                                     target: "_blank",
                                                                                     rel: "noopener noreferrer",
                                                                                     children: `${e.value}`
@@ -614,7 +614,7 @@
                                                                 className: "col-sm-6 mb-3",
                                                                 style: { cursor: "pointer" },
                                                                 onClick: () => {
-                                                                    const page = "gamemobile.phoenix"; // 👉 thay bằng username hoặc ID fanpage của bạn
+                                                                    const page = "game.mobile.studio.phoenix"; // 👉 thay bằng username hoặc ID fanpage của bạn
                                                                     const msg = `Mình muốn nhận code game ${news.name}`;
                                                                     const messengerUrl = `https://m.me/${page}?text=${encodeURIComponent(msg)}`;
 
