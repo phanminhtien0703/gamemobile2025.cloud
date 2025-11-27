@@ -43,7 +43,7 @@
                 data: [
                     { image: '/images/tmgt/tmgt-banner1.png', link: 'https://new.yxtgym.com/y92.0l110/EdIf1XkalZCqknYO0sCRwA/Icch.html' },
                     { image: './images/ltg/ltg-banner.jpg', link: 'http://www.poopogame.com/url/wIveb7A6' },
-                    { image: './images/tcq4d/tcq4d-banner.jpg', link: 'https://t.skeideng.com/oRZS82.html' }
+                    { image: './images/tcq4d/tcq4d-banner.jpg', link: 'hthttps://t.skeideng.com/S2Pxl3.html' }
                 ],
                 note: false // Hoặc true nếu muốn style khác cho pagination
             };
@@ -141,7 +141,7 @@
                     logoImage: "./images/tcq4d/tcq4d-logo.jpg",
                     type: 2,
                     gameType: { name: "Game hot" },
-                    href: "https://t.skeideng.com/oRZS82.html"
+                    href: "https://t.skeideng.com/S2Pxl3.html"
                 },
                 {
                     id: 3,
@@ -251,7 +251,7 @@
                     tag: [
                         { id: "tag2", name: "Cập nhật: 15-10-2025" }
                     ],
-                    href: "https://t.skeideng.com/oRZS82.html"
+                    href: "https://t.skeideng.com/S2Pxl3.html"
                 },
                 {
                     id: 3,
@@ -723,6 +723,7 @@
                                             })]
 
                         })
+                
 
             }
         },
