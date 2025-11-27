@@ -137,7 +137,7 @@
                 },
                 {
                     id: 2,
-                    name: "Thần Cơ Ấn",
+                    name: "Mộng Hoa Lục (Phù Sinh Mộng)",
                     logoImage: "./images/tcq4d/tcq4d-logo.jpg",
                     type: 2,
                     gameType: { name: "Game hot" },
@@ -182,12 +182,12 @@
                 },
                 {
                     id: 2,
-                    name: "Thần Cơ Ấn",
+                    name: "Mộng Hoa Lục (Phù Sinh Mộng)",
                     image: "./images/tcq4d/tcq4d-logo.jpg",
                     totalGiftcode: 200,
                     totalReceived: 114,
                     type: 2,
-                    text: "Mình muốn nhận code game Thần Cơ Ấn",
+                    text: "Mình muốn nhận code game Mộng Hoa Lục (Phù Sinh Mộng)",
                     value: "Nhận code",
                 },
                 {
@@ -245,8 +245,8 @@
                 },
                 {
                     id: 2,
-                    name: "Thần Cơ Ấn",
-                    title: "Thần Cơ Ấn - Khai mở server lúc 13:00 Thứ 3-5-7 hàng tuần",
+                    name: "Mộng Hoa Lục (Phù Sinh Mộng)",
+                    title: "Mộng Hoa Lục (Phù Sinh Mộng) - Khai mở server lúc 13:00 Thứ 3-5-7 hàng tuần",
                     image: "./images/tcq4d/tcq4d-banner.jpg",
                     tag: [
                         { id: "tag2", name: "Cập nhật: 15-10-2025" }
