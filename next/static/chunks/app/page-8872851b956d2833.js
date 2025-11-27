@@ -43,7 +43,7 @@
                 data: [
                     { image: '/images/tmgt/tmgt-banner1.png', link: 'https://new.yxtgym.com/y92.0l110/EdIf1XkalZCqknYO0sCRwA/Icch.html' },
                     { image: './images/ltg/ltg-banner.jpg', link: 'http://www.poopogame.com/url/wIveb7A6' },
-                    { image: './images/tcq4d/tcq4d-banner.jpg', link: 'hthttps://t.skeideng.com/S2Pxl3.html' }
+                    { image: './images/tcq4d/tcq4d-banner.jpg', link: 'https://t.skeideng.com/S2Pxl3.html' }
                 ],
                 note: false // Hoặc true nếu muốn style khác cho pagination
             };
